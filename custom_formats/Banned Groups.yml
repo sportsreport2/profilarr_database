@@ -94,11 +94,16 @@ conditions:
   pattern: LAMA
   required: false
   type: release_group
-- name: MgB
-  type: release_group
+- name: MeGusta
+  negate: false
+  pattern: MeGusta
   required: false
+  type: release_group
+- name: MgB
   negate: false
   pattern: MgB
+  required: false
+  type: release_group
 - name: NAHOM
   negate: false
   pattern: NAHOM
@@ -122,6 +127,16 @@ conditions:
 - name: PiRaTeS
   negate: false
   pattern: PiRaTeS
+  required: false
+  type: release_group
+- name: PSA
+  negate: false
+  pattern: PSA
+  required: false
+  type: release_group
+- name: RARGB
+  negate: false
+  pattern: RARGB
   required: false
   type: release_group
 - name: SasukeducK
@@ -159,6 +174,11 @@ conditions:
   pattern: Telly
   required: false
   type: release_group
+- name: TvR
+  type: release_group
+  required: false
+  negate: false
+  pattern: TvR
 - name: VECTOR
   negate: false
   pattern: VECTOR
@@ -172,6 +192,11 @@ conditions:
 - name: WiKi
   negate: false
   pattern: WiKi
+  required: false
+  type: release_group
+- name: x0r
+  negate: false
+  pattern: x0r
   required: false
   type: release_group
 - name: YIFY

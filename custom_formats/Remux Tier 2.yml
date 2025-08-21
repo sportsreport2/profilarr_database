@@ -1,7 +1,7 @@
 name: Remux Tier 2
 description: Matches release groups who fall under Remux Tier 2
 tags:
-- Release Groups
+- Release Group Tier
 - Remux
 conditions:
 - name: Remux

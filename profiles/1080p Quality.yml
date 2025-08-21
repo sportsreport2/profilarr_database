@@ -38,8 +38,6 @@ custom_formats:
 - name: 720p WEBRip
   score: 80000
 - name: 1080p Balanced Tier 1
-  score: 61000
-- name: 1080p Balanced Tier 2
   score: 60000
 - name: 480p WEB-DL
   score: 60000
@@ -53,6 +51,8 @@ custom_formats:
   score: 41000
 - name: 720p Quality Tier 5
   score: 40000
+- name: 720p Balanced Tier 1
+  score: 20000
 - name: DVD
   score: 20000
 - name: DVD Remux
@@ -61,37 +61,23 @@ custom_formats:
   score: 11000
 - name: SD Quality Tier 2
   score: 10000
-- name: 1080p Golden Popcorn
-  score: 8000
-- name: 720p Golden Popcorn
-  score: 6000
-- name: MA
-  score: 4000
-- name: SD Golden Popcorn
-  score: 4000
 - name: AMZN
-  score: 2000
+  score: 3000
 - name: ATVP
-  score: 2000
+  score: 3000
 - name: DSNP
-  score: 2000
-- name: ATV
-  score: 1000
-- name: CRIT
-  score: 1000
+  score: 3000
 - name: HMAX
-  score: 1000
-- name: iT
-  score: 1000
+  score: 2000
 - name: MAX
+  score: 2000
+- name: iT
   score: 1000
 - name: NF
   score: 1000
 - name: NOW
   score: 1000
 - name: PCOK
-  score: 1000
-- name: Special Edition
   score: 1000
 - name: DTS-HD HRA
   score: 800
@@ -108,15 +94,15 @@ custom_formats:
 - name: Dolby Digital
   score: 100
 - name: WEB-DL Tier 1
-  score: 80
+  score: 100
 - name: WEB-DL Tier 2
-  score: 60
+  score: 80
 - name: WEB-DL Tier 3
-  score: 40
+  score: 60
 - name: WEB-DL Tier 4
+  score: 40
+- name: WEB-DL Tier 5
   score: 20
-- name: Season Pack
-  score: 10
 - name: Repack3
   score: 8
 - name: Repack2
@@ -124,6 +110,8 @@ custom_formats:
 - name: Repack1
   score: 6
 - name: AAC
+  score: 0
+- name: BCORE
   score: 0
 - name: HTSR
   score: 0
@@ -137,8 +125,6 @@ custom_formats:
   score: 0
 - name: STAN
   score: 0
-- name: 3D
-  score: -999999
 - name: AV1
   score: -999999
 - name: B&W
@@ -151,11 +137,7 @@ custom_formats:
   score: -999999
 - name: Dolby Vision
   score: -999999
-- name: Extras
-  score: -999999
 - name: Full Disc
-  score: -999999
-- name: Full Disc (Quality Match)
   score: -999999
 - name: h265
   score: -999999
@@ -171,8 +153,6 @@ custom_formats:
   score: -999999
 - name: Remux
   score: -999999
-- name: Sing Along
-  score: -999999
 - name: Upscaled
   score: -999999
 - name: VP9
@@ -180,6 +160,38 @@ custom_formats:
 - name: VVC
   score: -999999
 - name: x265
+  score: -999999
+custom_formats_radarr:
+- name: 1080p Golden Popcorn
+  score: 8000
+- name: 720p Golden Popcorn
+  score: 6000
+- name: MA
+  score: 5000
+- name: SD Golden Popcorn
+  score: 4000
+- name: ATV
+  score: 1000
+- name: CRIT
+  score: 1000
+- name: Special Edition
+  score: 1000
+- name: 3D
+  score: -999999
+- name: Extras
+  score: -999999
+- name: Full Disc (Quality Match)
+  score: -999999
+- name: Remux (Quality Match)
+  score: -999999
+- name: Sing Along
+  score: -999999
+custom_formats_sonarr:
+- name: Season Pack
+  score: 10
+- name: Remux (Source)
+  score: -999999
+- name: TV Extras
   score: -999999
 qualities:
 - id: -1

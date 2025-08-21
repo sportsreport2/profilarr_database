@@ -60,31 +60,23 @@ custom_formats:
   score: 5000
 - name: Dolby Digital +
   score: 4000
-- name: MA
-  score: 4000
+- name: ATVP
+  score: 3000
 - name: Dolby Vision
+  score: 3000
+- name: DSNP
   score: 3000
 - name: DTS-ES
   score: 3000
-- name: AMZN
-  score: 2000
 - name: Atmos
   score: 2000
 - name: Atmos (Missing)
-  score: 2000
-- name: ATVP
-  score: 2000
-- name: DSNP
   score: 2000
 - name: DTS
   score: 2000
 - name: HDR10+
   score: 2000
-- name: iT
-  score: 2000
 - name: ATV
-  score: 1000
-- name: CRIT
   score: 1000
 - name: Dolby Digital
   score: 1000
@@ -96,10 +88,6 @@ custom_formats:
   score: 1000
 - name: HLG
   score: 1000
-- name: HMAX
-  score: 1000
-- name: MAX
-  score: 1000
 - name: NF
   score: 1000
 - name: NOW
@@ -108,26 +96,24 @@ custom_formats:
   score: 1000
 - name: PQ
   score: 1000
-- name: Special Edition
-  score: 1000
+- name: WEB-DL Tier 1
+  score: 100
 - name: Remux Tier 1
   score: 80
-- name: WEB-DL Tier 1
+- name: WEB-DL Tier 2
   score: 80
 - name: Remux Tier 2
   score: 60
-- name: WEB-DL Tier 2
+- name: WEB-DL Tier 3
   score: 60
 - name: Remux Tier 3
   score: 40
-- name: WEB-DL Tier 3
+- name: WEB-DL Tier 4
   score: 40
 - name: Remux Tier 4
   score: 20
-- name: WEB-DL Tier 4
+- name: WEB-DL Tier 5
   score: 20
-- name: Season Pack
-  score: 10
 - name: Repack3
   score: 8
 - name: Repack2
@@ -135,6 +121,8 @@ custom_formats:
 - name: Repack1
   score: 6
 - name: AAC
+  score: 0
+- name: BCORE
   score: 0
 - name: HTSR
   score: 0
@@ -148,8 +136,6 @@ custom_formats:
   score: 0
 - name: STAN
   score: 0
-- name: 3D
-  score: -999999
 - name: AV1
   score: -999999
 - name: B&W
@@ -160,21 +146,11 @@ custom_formats:
   score: -999999
 - name: Banned Remux
   score: -999999
-- name: Banned WEB-DL (x265)
-  score: -999999
 - name: Dolby Vision (Without Fallback)
-  score: -999999
-- name: Extras
   score: -999999
 - name: Full Disc
   score: -999999
-- name: Full Disc (Quality Match)
-  score: -999999
 - name: h265
-  score: -999999
-- name: Sing Along
-  score: -999999
-- name: UHDBits
   score: -999999
 - name: Upscaled
   score: -999999
@@ -185,6 +161,42 @@ custom_formats:
 - name: x264 (2160p)
   score: -999999
 - name: x265
+  score: -999999
+custom_formats_radarr:
+- name: MA
+  score: 5000
+- name: AMZN
+  score: 3000
+- name: iT
+  score: 3000
+- name: HMAX
+  score: 2000
+- name: MAX
+  score: 2000
+- name: CRIT
+  score: 1000
+- name: Special Edition
+  score: 1000
+- name: 3D
+  score: -999999
+- name: Extras
+  score: -999999
+- name: Full Disc (Quality Match)
+  score: -999999
+- name: Sing Along
+  score: -999999
+custom_formats_sonarr:
+- name: HMAX
+  score: 3000
+- name: MAX
+  score: 3000
+- name: AMZN
+  score: 2000
+- name: iT
+  score: 1000
+- name: Season Pack
+  score: 10
+- name: TV Extras
   score: -999999
 qualities:
 - id: 3

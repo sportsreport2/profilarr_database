@@ -1,9 +1,9 @@
-name: 1080p Efficient WEB-DL Tier 2
+name: 1080p WEB-DL HEVC Tier 3
 description: Matches 1080p WEB-DLs.
 tags:
 - Release Group Tier
 - 1080p
-- Efficient
+- HEVC
 conditions:
 - name: 1080p
   negate: false
@@ -20,24 +20,14 @@ conditions:
   pattern: HEVC
   required: true
   type: release_title
-- name: ARCADE
+- name: GRiMM
   negate: false
-  pattern: ARCADE
+  pattern: GRiMM
   required: false
   type: release_group
-- name: DarQ
+- name: OnlyWeb
   negate: false
-  pattern: DarQ
-  required: false
-  type: release_group
-- name: SiGMA
-  negate: false
-  pattern: SiGMA
-  required: false
-  type: release_group
-- name: Yoyo
-  negate: false
-  pattern: Yoyo
+  pattern: OnlyWeb
   required: false
   type: release_group
 tests: []

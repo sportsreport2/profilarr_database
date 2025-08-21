@@ -1,7 +1,7 @@
 name: Remux Tier 4
 description: Matches release groups who fall under Remux Tier 4
 tags:
-- Release Groups
+- Release Group Tier
 - Remux
 conditions:
 - name: Remux
@@ -45,8 +45,8 @@ conditions:
   required: false
   type: release_group
 - name: ZoroSenpai
-  type: release_group
-  required: false
   negate: false
   pattern: ZoroSenpai
+  required: false
+  type: release_group
 tests: []
